@@ -1,0 +1,44 @@
+<resources>
+
+    <style name="Theme.LeanbackMenu" parent="@style/Theme.Leanback">
+
+    </style>
+
+    <style name="Theme.LeanbackApp" parent="Theme.LeanbackMenu">
+        <item name="android:windowBackground">@drawable/cute_girl</item>
+        <item name="browseRowsMarginTop">356dp</item>
+
+        <item name="imageCardViewStyle">@style/MyCardStyle</item>
+        <item name="imageCardViewImageStyle">@style/MyCardImageStyle</item>
+    </style>
+
+    <style name="Theme.LeanbackApp.Options" parent="Theme.LeanbackMenu">
+        <item name="android:windowBackground">@drawable/doll_girl</item>
+        <item name="browseRowsMarginTop">100dp</item>
+
+        <item name="imageCardViewStyle">@style/GridCardStyle</item>
+        <item name="imageCardViewImageStyle">@style/GridCardImageStyle</item>
+    </style>
+
+    <style name="MyCardStyle" parent="Widget.Leanback.ImageCardViewStyle">
+        <item name="cardBackground">@null</item>
+        <item name="lbImageCardViewType">ImageOnly</item>
+    </style>
+
+    <style name="MyCardImageStyle" parent="Widget.Leanback.ImageCardView.ImageStyle">
+        <item name="android:layout_width">192dp</item>
+        <item name="android:layout_height">108dp</item>
+    </style>
+
+    <style name="GridCardStyle" parent="Widget.Leanback.ImageCardViewStyle">
+        <item name="cardBackground">@null</item>
+        <item name="lbImageCardViewType">Title|Content</item>
+    </style>
+
+    <style name="GridCardImageStyle" parent="Widget.Leanback.ImageCardView.ImageStyle">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+
+
+</resources>
